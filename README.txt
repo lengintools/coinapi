@@ -1,114 +1,83 @@
-=== Plugin Name ===
-Contributors: (this should be a list of wordpress.org userid's)
+=== CoinAPI Integration Plugin for WordPress ===
+Contributors: (list of wordpress.org userids)
 Donate link: https://example.org/
-Tags: comments, spam
-Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
+Tags: cryptocurrency, coinapi, real-time data, crypto prices
+Requires at least: 5.0
+Tested up to: 5.7
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+Integrate real-time cryptocurrency data into your WordPress site with CoinAPI.
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+This WordPress plugin integrates your website with CoinAPI, providing real-time cryptocurrency data directly on your site. It enables you to display the latest prices, historical data, trading volumes, and other market information of cryptocurrencies. Utilizing shortcodes or widgets, users can easily incorporate these data into their pages or posts, offering visitors up-to-date information on the cryptocurrency market.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+Features include:
 
-A few notes about the sections above:
-
-*   "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
-
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
-
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
+- **Real-time Data:** Fetch the latest cryptocurrency prices and market data.
+- **Shortcodes & Widgets:** Easily add cryptocurrency data to your site using shortcodes or customizable widgets.
+- **Historical Data:** Display historical price trends and market analysis.
+- **Extensive Cryptocurrency Support:** Access data for a wide range of cryptocurrencies provided by CoinAPI.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
-1. Upload `coinapi-integration.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+1. Clone this repository or download the ZIP file.
+2. Upload the `coinapi-integration` folder to your `/wp-content/plugins/` directory.
+3. Activate the plugin through the 'Plugins' menu in WordPress.
+4. Use the provided shortcodes or widgets in your templates to display cryptocurrency data.
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Can I display data for multiple cryptocurrencies? =
+Yes, the plugin allows you to configure which cryptocurrencies you want to display data for, either globally or on a per-shortcode/widget basis.
 
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
+= Is there a limit to the number of API calls? =
+CoinAPI provides a certain number of free API calls per month. If your site requires more requests, consider subscribing to a CoinAPI plan.
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. Widget configuration in the WordPress dashboard.
+2. Example of cryptocurrency data displayed on a page.
 
 == Changelog ==
 
 = 1.0 =
-* A change since the previous version.
-* Another change.
+- Initial release with real-time price fetching and widget support.
 
 = 0.5 =
-* List versions from most recent at top to oldest at bottom.
+- Beta version with basic functionality.
 
 == Upgrade Notice ==
 
 = 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
+This is the first stable release. Upgrade for improved performance and new features.
 
 = 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
+Beta version. Please upgrade to the latest version for a stable experience.
 
 == A brief Markdown Example ==
 
-Ordered list:
+Here's how you can use Markdown to format your plugin's readme file:
 
-1. Some feature
-1. Another feature
-1. Something else about the plugin
+### Headers
 
-Unordered list:
+Use `#` for headers. More `#`s mean a smaller header.
 
-* something
-* something else
-* third thing
+### Lists
 
-Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
+- For unordered lists, use dashes (`-`), asterisks (`*`), or plus signs (`+`).
+- For ordered lists, simply number them.
 
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
+### Links
 
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
+Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation](http://daringfireball.net/projects/markdown/syntax "Markdown is what the parser uses to process much of the readme file").
 
-`<?php code(); // goes in backticks ?>`
+### Code
+
+Use backticks to `highlight` code snippets. Use triple backticks for blocks of code.
+
+== License ==
+
+This plugin is licensed under the GPLv2 or later. See the LICENSE file for details.
